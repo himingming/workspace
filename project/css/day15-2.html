@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+    </head>
+
+    <body>
+        <h2>flex-grow row</h2>
+        <Div class="container" style="flex-direction: row">
+            <Div class="item" style="flex-grow:1; width: auto">flex-grow: 1</Div>
+            <Div class="item" style="flex-grow:1; width: auto">flex-grow: 1</Div>
+            <Div class="item" style="flex-grow:1; width: auto">flex-grow: 1</Div>
+        </Div>
+        <Div class="container" style="flex-direction: row">
+            <Div class="item" style="flex-grow:1">flex-grow: 1</Div>
+            <Div class="item" style="flex-grow:1">flex-grow: 2</Div>
+            <Div class="item" style="flex-grow:1">flex-grow: 3</Div>
+        </Div>
+
+        <h2>flex-grow column</h2>
+        <Div class="container" style="flex-direction: column; height: 300px;">
+            <Div class="item" style="flex-grow:1">flex-grow: 1</Div>
+            <Div class="item" style="flex-grow:1">flex-grow: 2</Div>
+            <Div class="item" style="flex-grow:1">flex-grow: 3</Div>
+        </Div>
+        <Div class="container" style="flex-direction: column; height: 300px;">
+            <Div class="item" style="flex-grow:1">flex-grow: 1</Div>
+            <Div class="item" style="flex-grow:1">flex-grow: 2</Div>
+            <Div class="item" style="flex-grow:1">flex-grow: 3</Div>
+        </Div>
+        </body>
+
+        </html>
+
+        <style>
+            div {background-color: gray;
+            border: 1px dotted black;
+            margin: 2px;
+        }
+
+        .container { width: 600px, min-height: 80px, position: relative; display: flex;}
+        .item { width: 100px; height: 60px; background-color: yellow; font-size: 14px;}
+</style>
